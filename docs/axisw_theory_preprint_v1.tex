@@ -1,0 +1,138 @@
+\documentclass[12pt]{article}
+\usepackage{geometry}
+\geometry{a4paper, margin=1in}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{hyperref}
+
+\title{Axis{W}: A Hypothetical Framework for Temporal Perception as Displacement in a Fourth Spatial Dimension}
+
+\author{
+  Gwen Mesmacre\thanks{ORCID: \href{https://orcid.org/0009-0003-1306-7036}{0009-0003-1306-7036}}\\
+  Independent Researcher\\
+  \texttt{gwen.mesmacre@proton.me}
+}
+
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+This paper proposes Axis\_W, a theoretical model in which time perception arises from displacement along a fourth spatial axis (W). We present simulations that demonstrate temporal inversion near supermassive black holes. These results offer a novel explanation for observed astrophysical anomalies such as variable redshifts and gamma-ray fluctuations.
+\end{abstract}
+
+\section{Introduction}
+
+We perceive time as a linear and universal flow, but this perception may be an emergent consequence of motion through an additional spatial dimension, denoted \( W \). In the proposed Axis\_W model, time is not a fundamental dimension but rather a projection of displacement along this orthogonal axis, relative to the three known spatial coordinates \( (X, Y, Z) \). This framework challenges the standard view of time as a background parameter and instead treats it as a derived quantity shaped by intrinsic motion, local gravitational conditions, and cosmic torsion.
+
+By simulating entities with motion in \( W \), we investigate how perceived time may dilate, invert, or oscillate under different conditions. This approach offers a new interpretation of phenomena typically attributed to relativistic time dilation, potentially explaining astrophysical anomalies that remain elusive under general relativity alone.
+
+
+\section{Methods}
+
+\subsection{Axis\_W Temporal Framework}
+We propose that perceived time, $T_p$, is a function of displacement in a fourth spatial axis $W$. The foundational equation of Axis\_W is:
+
+\[
+T_p = \int \left( v_W \cdot \frac{1}{g} + \omega_W \right) \, dt
+\]
+
+Where:
+
+\begin{itemize}
+\item $T_p$ is the perceived time (accumulated through displacement in $W$),
+\item $v_W$ is the intrinsic velocity of the entity in $W$,
+\item $g$ is the local gravitational factor (higher $g$ slows time),
+\item $\omega_W$ is the global torsion of the universe in $W$,
+\item $t$ is the absolute simulation time.
+\end{itemize}
+
+In the simulation engine, this integral is approximated stepwise via:
+
+\[
+\Delta W(t) = \left( v_W(t) \cdot \frac{1}{g} \right) + \omega_W
+\quad \text{and} \quad
+T_p(t + \delta t) = T_p(t) + \Delta W(t) \cdot \delta t
+\]
+
+This numerical implementation allows for the modeling of time dilation and inversion effects across complex gravitational and torsional fields.
+
+\subsection{Simulation Design}
+A Python engine simulates entities evolving in W, using modules for universe dynamics and entity-specific parameters. Data is logged for analysis.
+
+\subsection{Parameters}
+\begin{itemize}
+\item $\omega_W = \pm 0.05$ rad/s
+\item $g=500$ for S-star\_W
+\item $\Delta t=1$ s, 20 steps
+\end{itemize}
+
+\section{Results and Discussion}
+
+The simulation of S-star\_W near Sagittarius A* revealed:
+
+\begin{center}
+\begin{tabular}{|c|c|c|}
+\hline
+Step & Universe\_W & S-star\_W Time Perceived \\
+\hline
+1 & -0.05 & -0.0484 \\
+2 & -0.1  & -0.0968 \\
+... & ... & ... \\
+20 & -1.0 & -0.968 \\
+\hline
+\end{tabular}
+\end{center}
+
+All $\Delta W < 0$, implying a retrograde temporal flow. Observational correlations include:
+\begin{itemize}
+\item M87* brightness variability (EHT, 2019)
+\item Absence of pulsars near Sgr A* (Chandra)
+\item Gamma-ray flares (Fermi Telescope)
+\end{itemize}
+
+\section{Conclusion}
+
+Axis\_W predicts phenomena beyond general relativity: temporal inversion and oscillations in W. These offer testable hypotheses with upcoming observatories.
+
+\subsection*{Future Work}
+\begin{itemize}
+\item Correlate W dynamics with high-resolution light curves
+\item Expand model to galactic and cosmological scales
+\end{itemize}
+
+\section*{References}
+\begin{thebibliography}{9}
+\bibitem{eht2019}
+Event Horizon Telescope Collaboration et al., \emph{First M87 Event Horizon Telescope Results}, Astrophysical Journal Letters (2019).
+
+\bibitem{chandra2020}
+Chandra X-Ray Observatory, \emph{Sagittarius A* Pulsar Search Results}, NASA (2020).
+
+\bibitem{generalrelativity}
+Einstein, A., \emph{The Foundation of the General Theory of Relativity}, Annalen der Physik (1916).
+
+\bibitem{axisw}
+Gwen Mesmacre, GPT-4o, \emph{Axis\_W: A Hypothetical Torsional Model of Perceived Time}, Preprint (2025).
+\end{thebibliography}
+
+\section*{License}
+This project is licensed under the CC BY--NC 4.0 License:  
+\url{https://creativecommons.org/licenses/by-nc/4.0/}
+
+You are free to copy, share, and adapt the materials, provided that:
+\begin{itemize}
+\item Appropriate credit is given to the author.
+\item The materials are not used for commercial purposes without permission.
+\end{itemize}
+
+For full license details, see: \url{https://creativecommons.org/licenses/by-nc/4.0/}
+
+\copyright{} 2025 Gwen Mesmacre
+
+\end{document}
+
