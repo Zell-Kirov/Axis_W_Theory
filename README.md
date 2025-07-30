@@ -26,121 +26,32 @@ Provide an accessible, modular, and open framework for experimentation.
 
 ## Project Contents
 
-# Structure:
+## Project Structure
 
+```
 Axis_W_Theory/
-├── analysis/
-│   ├── compare_with_observed.py
-│   ├── regression_model.py
-│   ├── regression_simple.py
-│   ├── residual_analysis.py
-│   ├── statistics_cross.py
-│   ├── torsion_crossvalidation.py
-│   ├── torsion_regression_sinusoidal_omega.py
-│   ├── torsion_regression_variable_omega.py
-│   ├── torsion_regression_with_omega.py
-│   └── torsion_regression.py
-│
-├── data/
-│   ├── axisw_correlation_matrix.png
-│   ├── axisw_regression_plot_simple.png
-│   ├── axisw_regression_plot.png
-│   ├── axisw_residuals_plot_real.png
-│   ├── axisw_residuals_plot.png
-│   ├── axisw_torsion_residuals.png
-│   ├── blackhole_plot.png
-│   ├── comparaison_plot.png
-│   ├── comparison_plot.png
-│   ├── comparison_summary.md
-│   ├── gaia_output.csv
-│   ├── gaia_plot.png
-│   ├── gaia_real_objects-result.csv
-│   ├── gaia_universe_observed-result.csv
-│   ├── m87_xray_sources.csv
-│   ├── omega_comparison.md
-│   ├── omega_sinusoidal_summary.md
-│   ├── omega_variable_vs_summary.md
-│   ├── omegaW_residuals_plot.png
-│   ├── omegaW_sinusoidal_residuals_plot.png
-│   ├── omegaW_variable_vs_residuals_plot.png
-│   ├── output.csv
-│   ├── pulsar_timing.csv
-│   ├── regression_summary_simple.md
-│   ├── regression_summary.md
-│   ├── residual_summary_real.md
-│   ├── s_star_prediction.csv
-│   ├── sgrA_sstars.csv
-│   ├── TableGaia_Archive-result.csv
-│   ├── time_loop_simulation.png
-│   ├── time_mass_velocity_3D.png
-│   ├── time_vs_gravity.png
-│   ├── time_vs_velocity.png
-│   ├── torsion_crossvalidation_summary.md
-│   └── torsion_summary.md
-│
-├── docs/
-│   ├── axisw_theory_preprint_v1.tex
-│   ├── theory.md
-│   └── validation_axis_w.md
-│
-├── logs/
-│   ├── test_blackhole.log
-│   ├── test_entity.log
-│   ├── test_extreme_conditions.log
-│   ├── test_physics_consistency.log
-│   └── test_universe.log
-│
-├── src/
-│   ├── compare_real_data.py
-│   ├── compare_sgra_advanced_models.py
-│   ├── compare_sgra_models.py
-│   ├── compare_sgra_orbital_models.py
-│   ├── entity.py
-│   ├── gaia_import.py
-│   ├── main_blackhole.py
-│   ├── main_gaia.py
-│   ├── main.py
-│   ├── simulate_reverse_axisw.py
-│   ├── simulation.py
-│   ├── universe.py
-│   ├── visualisation_extremes.py
-│   └── visualisation_mass_velocity.py
-│
-├── tests/
-│   ├── run_tests_and_log.py
-│   ├── test_blackhole.py
-│   ├── test_entity.py
-│   ├── test_extreme_conditions.py
-│   ├── test_physics_consistency.py
-│   └── test_universe.py
-│
-├── utils/
-│   └── extract_star_subset.py
-│
-├── validation/
-│   ├── axisw_real_data_comparison.md
-│   ├── axisw_sgra_advanced_models.md
-│   ├── axisw_sgra_models.md
-│   ├── axisw_sgra_orbital_models.md
-│   └── plots/
-│       ├── axisw_reverse_time_simulation.png
-│       ├── gaia_residuals.png
-│       ├── m87_(relativistic_jet)_residuals.png
-│       ├── pulsars_(nanograv)_residuals.png
-│       ├── sgr_a_(s-stars)_residuals.png
-│       ├── sgr_a_gravity_comparison_torsion_residuals_advanced_models.png
-│       ├── sgr_a_linear_torsion_residuals_multitest.png
-│       ├── sgr_a_multi-frequency_torsion_residuals_multitest.png
-│       ├── sgr_a_nonlinear_torsion_residuals_multitest.png
-│       ├── sgr_a_orbital_torsion_residuals_orbital_models.png
-│       ├── sgr_a_precession-modulated_torsion_residuals_advanced_models.png
-│       └── sgr_a_velocity-modulated_torsion_residuals_advanced_models.png
-│
-├── sgrA_sstars_README.md
-├── README.md
-├── pulsar_timing_README.md
-├── m87_xray_README.md
-└── LICENSE
+├── analysis/         # Python scripts for regression, cross-validation, residuals, and comparisons
+├── data/             # Raw and processed datasets (e.g., Gaia, S-stars, pulsars)
+├── docs/             # Theoretical documents, drafts, and model descriptions
+├── logs/             # Log files from test runs and simulations
+├── plots/            # Visual outputs from analysis and simulations
+├── src/              # Core simulation code and Axis_W model implementation
+├── tests/            # Unit and integration tests for model consistency
+├── utils/            # Utility functions and data extraction helpers
+├── validation/       # Final result summaries and comparative model analyses
+├── README.md         # Project overview and usage instructions
+├── LICENSE           # Licensing information
+└── .gitignore        # Ignored files and folders
+```
+## Main Folders
+
+- [`analysis/`](./analysis) — Scripts for data analysis and regression
+- [`data/`](./data) — All input/output datasets used in the study
+- [`docs/`](./docs) — Research drafts, theoretical notes, and LaTeX files
+- [`src/`](./src) — Source code for simulations and computations
+- [`validation/`](./validation) — Results and model validation outputs
+- [`plots/`](./plots) — Figures and plots for scientific interpretation
+- [`tests/`](./tests) — Automated tests for stability and correctness
 
 ## Technologies used:
 
